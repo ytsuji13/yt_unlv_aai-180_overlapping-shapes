@@ -14,7 +14,7 @@ function regenerateAndRender() {
 
 function generateShapes() {
     const shapes = [];
-    const numShapes = 75;
+    const numShapes = 150;
     const width = 800; // Canvas logical width
     const height = 600; // Canvas logical height
 
@@ -67,13 +67,13 @@ function renderDepthCanvas(shapes) {
         // Calculate line width based on Z
         // 20 tiers from 0 to 1000. Step = 50.
         // Tier 0: 0-49, Tier 1: 50-99... Tier 19: 950-1000
-        // Line weight varies from 0.1px (background) to 1.0px (foreground)
+        // Line weight varies from 0.1px (background) to 1.5px (foreground)
 
         let tier = Math.min(19, Math.floor(shape.z / 50));
 
-        // Map tier 0-19 to width 0.1-1.0
-        // 0.1 + (tier / 19) * (1.0 - 0.1)
-        let lineWidth = 0.1 + (tier / 19) * 0.9;
+        // Map tier 0-19 to width 0.1-1.5
+        // 0.1 + (tier / 19) * (1.5 - 0.1)
+        let lineWidth = 0.1 + (tier / 19) * 1.4;
 
         drawShape(ctx, shape, lineWidth);
     });

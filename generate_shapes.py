@@ -6,7 +6,7 @@ def generate_shapes():
     width = 800
     height = 600
 
-    for _ in range(75):
+    for _ in range(150):
         # Generate random position
         x = random.randint(50, width - 50)
         y = random.randint(50, height - 50)
@@ -57,7 +57,7 @@ def main():
     width = 800
     height = 600
 
-    for i in range(75):
+    for i in range(150):
         x = random.randint(50, width - 50)
         y = random.randint(50, height - 50)
         size = random.randint(30, 100)

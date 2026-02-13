@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #ffffff;
     color: #333;
     margin: 0;
     padding: 20px;
@@ -63,7 +63,7 @@ h2 {
 
 canvas {
     border: 1px solid #e1e4e8;
-    background-color: #eef2f7;
+    background-color: #ffffff;
     border-radius: 4px;
     width: 100%;
     /* Make canvas responsive */
