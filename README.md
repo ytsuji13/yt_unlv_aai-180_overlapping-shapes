@@ -1,4 +1,4 @@
-# Overlapping Shapes Visualization (Trial 4)
+# Overlapping Shapes Visualization
 
 ## Goals
 The primary goal of this application is to **visually demonstrate the effect of line weight on depth perception** in a 2D medium. By varying the thickness of lines based on their "Z-elevation" (distance from the viewer), we create a sense of three-dimensional space.
@@ -35,3 +35,4 @@ The application renders the exact same set of shapes on two canvases:
 #### Right Canvas: Uniform
 -   **Line Weight**: Fixed at **0.5px** (the thinnest weight) for all shapes.
 -   **Purpose**: Demonstrates that without line weight variation, the sense of depth is significantly flatter, relying solely on overlap.
+
