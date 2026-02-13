@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping Shapes Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Overlapping Shapes Visualization</h1>
+            <p>Comparing depth perception with varied line weights vs. uniform line weights.</p>
+            <div class="controls">
+                <button id="regenerateBtn" class="btn">Regenerate Shapes</button>
+            </div>
+        </header>
+        <div class="canvas-container">
+            <div class="canvas-wrapper">
+                <h2>Depth Graded</h2>
+                <canvas id="depthCanvas" width="800" height="600"></canvas>
+            </div>
+            <div class="canvas-wrapper">
+                <h2>Uniform</h2>
+                <canvas id="uniformCanvas" width="800" height="600"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

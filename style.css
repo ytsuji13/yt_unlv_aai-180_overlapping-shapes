@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1700px;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Reduced gap to fit better */
+    flex-wrap: wrap;
+    /* Still wrap on very small screens, but aim for side-by-side */
+    align-items: flex-start;
+}
+
+.canvas-wrapper {
+    background: white;
+    padding: 10px;
+    /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    /* Allow to grow and shrink, taking up roughly half width */
+    min-width: 300px;
+    /* Prevent shrinking too small */
+    max-width: 800px;
+    /* Don't grow larger than canvas native size */
+}
+
+h2 {
+    margin-top: 5px;
+    /* Tighter header spacing */
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.2em;
+}
+
+canvas {
+    border: 1px solid #e1e4e8;
+    background-color: #eef2f7;
+    border-radius: 4px;
+    width: 100%;
+    /* Make canvas responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove bottom whitespace */
+}
+
+/* Button Styles */
+.controls {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
